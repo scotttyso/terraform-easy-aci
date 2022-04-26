@@ -4,11 +4,6 @@ contracts = {
     description   = "value"
     filters = [
       {
-        action = "deny"
-        name   = "ssh_filter"
-        tenant = "common"
-      },
-      {
         action = "permit"
         name   = "default"
         tenant = "common"
