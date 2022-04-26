@@ -10,13 +10,19 @@ application_epgs = {
         resolution_immediacy = "immediate"
       }
     ]
+    epg_to_aaeps = [
+      {
+        aaep = "trunkAep"
+        vlans = [1104]
+      }
+    ]
     preferred_group_member = true
     static_paths = [
       {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootA"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1104]
@@ -25,7 +31,7 @@ application_epgs = {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootB"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1104]
@@ -46,13 +52,19 @@ application_epgs = {
         resolution_immediacy = "immediate"
       }
     ]
+    epg_to_aaeps = [
+      {
+        aaep = "trunkAep"
+        vlans = [1101]
+      }
+    ]
     preferred_group_member = true
     static_paths = [
       {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootA"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1101]
@@ -61,15 +73,15 @@ application_epgs = {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootB"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1101]
       }
     ]
-    tenant                 = "skunkworks"
-    useg_epg               = false
-    vrf                    = "prod"
+    tenant   = "skunkworks"
+    useg_epg = false
+    vrf      = "prod"
   }
   "asgard-migration" = {
     application_profile = "vmware"
@@ -82,13 +94,19 @@ application_epgs = {
         resolution_immediacy = "immediate"
       }
     ]
+    epg_to_aaeps = [
+      {
+        aaep = "trunkAep"
+        vlans = [1102]
+      }
+    ]
     preferred_group_member = true
     static_paths = [
       {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootA"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1102]
@@ -97,15 +115,15 @@ application_epgs = {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootB"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1102]
       }
     ]
-    tenant                 = "skunkworks"
-    useg_epg               = false
-    vrf                    = "prod"
+    tenant   = "skunkworks"
+    useg_epg = false
+    vrf      = "prod"
   }
   "asgard-storage" = {
     application_profile = "vmware"
@@ -118,13 +136,19 @@ application_epgs = {
         resolution_immediacy = "immediate"
       }
     ]
+    epg_to_aaeps = [
+      {
+        aaep = "trunkAep"
+        vlans = [1103]
+      }
+    ]
     preferred_group_member = true
     static_paths = [
       {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootA"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1103]
@@ -133,14 +157,14 @@ application_epgs = {
         encapsulation_type = "vlan"
         mode               = "trunk"
         name               = "grootB"
-        nodes              = [101,102]
+        nodes              = [101, 102]
         path_type          = "vpc"
         pod                = 1
         vlans              = [1103]
       }
     ]
-    tenant                 = "skunkworks"
-    useg_epg               = false
-    vrf                    = "prod"
+    tenant   = "skunkworks"
+    useg_epg = false
+    vrf      = "prod"
   }
 }
