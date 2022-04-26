@@ -1,1 +1,1 @@
-spine_interface_policy_groups   = {}
+spine_interface_policy_groups = {}

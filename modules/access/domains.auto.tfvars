@@ -1,3 +1,7 @@
-layer3_domains   = {}
-physical_domains = {}
-vmm_domains      = {}
+layer3_domains = {}
+physical_domains = {
+  "access" = {
+    vlan_pool = "access"
+  }
+}
+vmm_domains = {}
