@@ -1,0 +1,9 @@
+global_qos_class                 = {}
+fc_interface_policies            = {}
+l2_interface_policies            = {}
+lacp_interface_policies          = {}
+link_level_policies              = {}
+lldp_interface_policies          = {}
+mcp_interface_policies           = {}
+port_security_policies           = {}
+spanning_tree_interface_policies = {}
