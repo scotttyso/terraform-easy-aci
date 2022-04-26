@@ -1,1 +1,28 @@
-leaf_policy_groups = {}
+leaf_policy_groups = {
+  "default" = {
+    annotation                     = ""
+    bfd_ipv4_policy                = "default"
+    bfd_ipv6_policy                = "default"
+    bfd_multihop_ipv4_policy       = "default"
+    bfd_multihop_ipv6_policy       = "default"
+    cdp_policy                     = "cdpEnabled"
+    copp_leaf_policy               = "default"
+    copp_pre_filter                = "default"
+    description                    = ""
+    dot1x_authentication_policy    = "default"
+    equipment_flash_config         = "default"
+    fast_link_failover_policy      = "default"
+    fibre_channel_node_policy      = "default"
+    fibre_channel_san_policy       = "default"
+    forward_scale_profile_policy   = "default"
+    lldp_policy                    = "lldpEnabled"
+    monitoring_policy              = "default"
+    name_alias                     = ""
+    netflow_node_policy            = "default"
+    ptp_node_policy                = "default"
+    poe_node_policy                = "default"
+    spanning_tree_interface_policy = "default"
+    synce_node_policy              = "default"
+    usb_configuration_policy       = "default"
+  }
+}

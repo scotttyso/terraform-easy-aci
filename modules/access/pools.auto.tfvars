@@ -13,4 +13,14 @@ vlan_pools = {
       }
     }
   }
+  "l3out" = {
+    allocation_mode = "static"
+    description     = "Marvel L3Out Static Pool"
+    encap_blocks = {
+      "0" = {
+        description = "L3Outs"
+        vlan_range  = "1004-1006"
+      }
+    }
+  }
 }

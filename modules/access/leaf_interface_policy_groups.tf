@@ -155,10 +155,10 @@ resource "aci_leaf_access_port_policy_group" "policy_groups" {
     regexall("^[[:alnum:]]", coalesce(each.value.mcp_interface_policy, "_EMPTY"))
   ) > 0 ? aci_miscabling_protocol_interface_policy.mcp_interface_policies[each.value.mcp_interface_policy].id : ""
   # class: monFabricPol
-  # DN: "uni/fabric/monfab-{monitoring_policy}"
+  # DN: "uni/infra/moninfra-{monitoring_policy}"
   relation_infra_rs_mon_if_infra_pol = length(
     regexall("^[[:alnum:]]", coalesce(each.value.monitoring_policy, "_EMPTY"))
-  ) > 0 ? "uni/fabric/monfab-${each.value.monitoring_policy}" : ""
+  ) > 0 ? "uni/infra/moninfra-${each.value.monitoring_policy}" : ""
   # class: netflowMonitorPol
   # DN: "uni/infra/monitorpol-{netflow_policy}"
   # relation_infra_rs_netflow_monitor_pol = length(
@@ -407,10 +407,10 @@ resource "aci_leaf_access_bundle_policy_group" "policy_groups" {
     regexall("^[[:alnum:]]", coalesce(each.value.mcp_interface_policy, "_EMPTY"))
   ) > 0 ? aci_miscabling_protocol_interface_policy.mcp_interface_policies[each.value.mcp_interface_policy].id : ""
   # class: monFabricPol
-  # DN: "uni/fabric/monfab-{monitoring_policy}"
+  # DN: "uni/infra/moninfra-{monitoring_policy}"
   relation_infra_rs_mon_if_infra_pol = length(
     regexall("^[[:alnum:]]", coalesce(each.value.monitoring_policy, "_EMPTY"))
-  ) > 0 ? "uni/fabric/monfab-${each.value.monitoring_policy}" : ""
+  ) > 0 ? "uni/infra/moninfra-${each.value.monitoring_policy}" : ""
   # **There is no default Policy**
   # class: qosDppPol
   # DN: "uni/infra/qosdpppol-{{qosDppPol}}"

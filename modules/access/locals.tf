@@ -481,7 +481,7 @@ locals {
       ) > 0 ? v.external_pool_id : 0
       interfaces        = v.interfaces != null ? v.interfaces : {}
       leaf_policy_group = v.leaf_policy_group
-      monitoring_policy = v.monitoring_policy != null ? "uni/fabric/monfab-${v.monitoring_policy}" : "uni/fabric/monfab-default"
+      monitoring_policy = v.monitoring_policy != null ? "uni/infra/moninfra-${v.monitoring_policy}" : "uni/infra/moninfra-default"
       name              = v.name
       name_alias        = v.name_alias != null ? v.name_alias : ""
       node_type         = v.node_type != null ? v.node_type : "unspecified"
@@ -597,7 +597,7 @@ locals {
       description        = v.description != null ? v.description : ""
       external_pool_id   = 0
       interfaces         = v.interfaces != null ? v.interfaces : {}
-      monitoring_policy  = v.monitoring_policy != null ? "uni/fabric/monfab-${v.monitoring_policy}" : "uni/fabric/monfab-default"
+      monitoring_policy  = v.monitoring_policy != null ? "uni/infra/moninfra-${v.monitoring_policy}" : "uni/infra/moninfra-default"
       name               = v.name
       name_alias         = v.name_alias != null ? v.name_alias : ""
       node_type          = "unspecified"
